@@ -1,0 +1,57 @@
+/*including the padding and border in an element's total width and height*/
+* {
+  box-sizing: border-box;
+}
+/*Styling the body of html*/
+body {
+  margin: 0;
+  font-family: Arial;
+  background: blanchedalmond;
+}
+/*Styling the heading*/
+h1 {
+  text-align: center;
+  padding: 32px;
+  color: #9400D3;
+  background-color: burlywood;
+  margin: 10px ;
+  padding: 10px;
+}
+/*Styling the row*/
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/*Styling the Coloumn*/
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+/*Styling the Coloumn images*/
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*adjusting the largescreen size */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/*adjusting the smallscreen size */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
